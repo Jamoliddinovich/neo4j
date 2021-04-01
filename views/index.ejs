@@ -1,0 +1,33 @@
+<h1>Adding Countries</h1>
+<form action="/country/add" method="POST">
+<label for="">Title</label><input type="text" name="title">
+<button type="submit">Submit</button>
+</form>
+
+<h1>Adding Regions</h1>
+<form action="/region/add" method="POST">
+<label for="">Title</label><input type="text" name="title">
+<button type="submit">Submit</button>
+</form>
+<h1>Adding Relationship</h1>
+<form action="/country/region/add" method="POST">
+<label for="">Title of Country</label><input type="text" name="country">
+<label for="">Title of Region</label><input type="text" name="region">
+<button type="submit">Submit</button>
+</form>
+
+
+
+
+<h1>Countries</h1>
+<ul>
+    <%Countries.forEach((element)=>{%>
+<div><%=element%></div>
+    <%}) %>
+</ul>
+<h1>Regions</h1>
+<ul>
+    <%Regions.forEach((element)=>{%>
+<div><%=element%></div>
+    <%}) %>
+</ul>
